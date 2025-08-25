@@ -1,0 +1,54 @@
+/* Sidebar ke liye */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 100vh;
+  background: linear-gradient(135deg, #0c0c0c, #0a0a0a); /* black gradient */
+  color: white;
+  padding: 20px;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.3);
+  overflow-y: auto; /* Scrollable sidebar */
+}
+
+/* Main content ke liye */
+.main-content {
+  margin-left: 240px; /* Sidebar ki width ke barabar */
+  padding: 20px;
+  background: linear-gradient(135deg, #070505, #080808); /* black gradient for full page */
+  min-height: 100vh;
+  transition: margin-left 0.3s ease;
+  color: #fff; /* Text color white for contrast */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card/section styling inside main content */
+.main-content .card {
+  background: rgba(255,255,255,0.05); /* Slightly transparent white for contrast */
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+}
+
+/* Responsive: Mobile pe sidebar collapse ho jaye */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 180px;
+  }
+  .main-content {
+    margin-left: 180px;
+  }
+}
+
+@media (max-width: 500px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  .main-content {
+    margin-left: 0;
+  }
+}
