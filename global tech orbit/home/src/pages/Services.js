@@ -6,8 +6,8 @@ import fullstackImg from "../assets/FD.jpg";
 import networkingImg from "../assets/5.jpeg";
 import cyberImg from "../assets/C.jpeg";
 import dataImg from "../assets/7.jpeg";
-import projectImg from "../assets/P.jpeg"; // New image for Projects
-import consultingImg from "../assets/CCC.jpeg"; // New image for IT Consulting
+import projectImg from "../assets/P.jpeg"; 
+import consultingImg from "../assets/CCC.jpeg"; 
 
 export default function Services() {
   const services = [
@@ -18,30 +18,32 @@ export default function Services() {
     { img: networkingImg, title: "Networking", desc: "Secure and efficient network infrastructure." },
     { img: cyberImg, title: "Cybersecurity", desc: "Protect systems from digital threats." },
     { img: dataImg, title: "Data Analytics", desc: "Insights from complex data." },
-    { img: projectImg, title: "Custom Projects", desc: "End-to-end project execution tailored to your needs." },
     { img: consultingImg, title: "IT Consulting", desc: "Expert guidance for your technology strategy." },
   ];
 
   return (
-    <section style={sectionStyle}>
-      <h1 style={titleStyle}>Our Services</h1>
-      <div style={gridStyle}>
-        {services.map((service, index) => (
-          <div
-            key={index}
-            style={{
-              ...cardStyle,
-              backgroundImage: `url(${service.img})`,
-            }}
-          >
-            <div style={overlayStyle}>
-              <h3 style={headingStyle}>{service.title}</h3>
-              <p style={descStyle}>{service.desc}</p>
+    <div>
+      {/* Services Section */}
+      <section style={sectionStyle}>
+        <h1 style={titleStyle}>Our Services</h1>
+        <div style={gridStyle}>
+          {services.map((service, index) => (
+            <div
+              key={index}
+              style={{
+                ...cardStyle,
+                backgroundImage: `url(${service.img})`,
+              }}
+            >
+              <div style={overlayStyle}>
+                <h3 style={headingStyle}>{service.title}</h3>
+                <p style={descStyle}>{service.desc}</p>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
-    </section>
+          ))}
+        </div>
+      </section>
+    </div>
   );
 }
 
@@ -99,4 +101,36 @@ const headingStyle = {
 
 const descStyle = {
   fontSize: "14px",
+};
+
+// Project Section Styles
+const projectSectionStyle = {
+  padding: "60px 40px",
+  background: "#ffffff",
+};
+
+const projectTitleStyle = {
+  textAlign: "center",
+  marginBottom: "40px",
+  fontSize: "34px",
+  fontWeight: "bold",
+  color: "#222",
+};
+
+const projectBoxStyle = {
+  display: "flex",
+  flexWrap: "wrap",
+  gap: "30px",
+  alignItems: "center",
+  justifyContent: "center",
+};
+
+const projectImgStyle = {
+  width: "400px",
+  borderRadius: "12px",
+  boxShadow: "0 6px 12px rgba(0,0,0,0.3)",
+};
+
+const projectTextStyle = {
+  maxWidth: "600px",
 };

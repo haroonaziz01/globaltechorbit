@@ -2,6 +2,11 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { GitHub, Linkedin, Phone, Mail } from "react-feather";
 
+// Import local images
+import img4 from "../assets/6.jpeg";
+import img5 from "../assets/5.jpeg";
+import img3 from "../assets/7.jpeg";
+
 export default function Contact() {
   const form = useRef();
   const [loading, setLoading] = useState(false);
@@ -68,7 +73,7 @@ export default function Contact() {
       style={{
         position: "relative",
         padding: "50px 20px",
-        backgroundImage: "url('https://images.unsplash.com/photo-1515168833906-d2a3b82b3029?fit=crop&w=1950&q=80')",
+        backgroundImage: `url(${img4})`, // 🔥 using local image
         backgroundSize: "cover",
         backgroundPosition: "center",
         fontFamily: "Arial, sans-serif",
@@ -79,24 +84,30 @@ export default function Contact() {
       }}
     >
       {/* Dark Overlay */}
-      <div style={{
-        position: "absolute",
-        top: 0, left: 0, right: 0, bottom: 0,
-        backgroundColor: "rgba(0,0,0,0.6)"
-      }} />
+      <div
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          backgroundColor: "rgba(0,0,0,0.6)",
+        }}
+      />
 
-      <div style={{
-        position: "relative",
-        zIndex: 2,
-        maxWidth: "500px",
-        width: "100%",
-        background: "rgba(255, 255, 255, 0.15)",
-        borderRadius: "10px",
-        backdropFilter: "blur(10px)",
-        overflow: "hidden",
-        boxShadow: "0 0 20px rgba(0,0,0,0.5)"
-      }}>
-        
+      <div
+        style={{
+          position: "relative",
+          zIndex: 2,
+          maxWidth: "500px",
+          width: "100%",
+          background: "rgba(255, 255, 255, 0.15)",
+          borderRadius: "10px",
+          backdropFilter: "blur(10px)",
+          overflow: "hidden",
+          boxShadow: "0 0 20px rgba(0,0,0,0.5)",
+        }}
+      >
         {/* Header */}
         <div
           style={{

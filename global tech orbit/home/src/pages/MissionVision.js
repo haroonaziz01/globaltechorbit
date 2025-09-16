@@ -16,25 +16,35 @@ export default function MissionVision() {
     return () => clearInterval(interval);
   }, [backgrounds.length]);
 
+  // Updated Mission
   const missionCards = [
     {
-      title: "Empower Through Education",
-      desc: "Providing accessible and high-quality tech education to learners worldwide.",
+      title: "Deliver Quality Projects",
+      desc: "Helping individuals and businesses by creating reliable and customized projects tailored to their needs.",
     },
     {
-      title: "Innovative Learning",
-      desc: "Creating modern, practical, and hands-on learning experiences.",
+      title: "Provide Professional Services",
+      desc: "Offering a wide range of IT and tech services to support growth and innovation.",
+    },
+    {
+      title: "Online Learning Support",
+      desc: "Guiding learners through online courses and practical training for skill development.",
     },
   ];
 
+  // Updated Vision
   const visionCards = [
     {
-      title: "Global Tech Leaders",
-      desc: "Shaping the next generation of innovators and industry leaders.",
+      title: "Empower Through Technology",
+      desc: "Making technology simple and accessible for everyone, from beginners to professionals.",
     },
     {
-      title: "Sustainable Future",
-      desc: "Using technology to solve real-world challenges for a better tomorrow.",
+      title: "Global Online Education Hub",
+      desc: "Becoming a trusted platform for online learning, projects, and professional IT services worldwide.",
+    },
+    {
+      title: "Supportive Community",
+      desc: "Building a strong community where learners and clients can collaborate and grow together.",
     },
   ];
 

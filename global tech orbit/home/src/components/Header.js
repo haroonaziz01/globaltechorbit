@@ -28,7 +28,7 @@ const links = [
   { path: "/courses", label: "Courses" },
   { path: "/services", label: "Services" },
   { path: "/contact", label: "Contact" },
-  { path: "/founder", label: "Founder" },
+  { path: "/founder", label: "About Us" },
 ];
 
 // 🎨 Styles

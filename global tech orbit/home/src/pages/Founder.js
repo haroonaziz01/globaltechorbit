@@ -20,19 +20,6 @@ export default function Founder() {
               transformative digital strategies that ensure long-term success.
             </p>
           </div>
-
-          {/* Founder 2 */}
-          <div style={founderBoxStyle}>
-            <h2 style={nameStyle}>Raja Afaq Khan</h2>
-            <h4 style={roleStyle}>Co-Founder & Director – Global Tech Orbit</h4>
-            <p style={paraGradient}>
-              With deep expertise in Cloud Computing, Networking, and
-              Cybersecurity, I aim to create a secure, scalable, and
-              future-ready digital environment for our clients. My vision is
-              to foster a culture of innovation, trust, and excellence that
-              shapes the technology landscape for generations.
-            </p>
-          </div>
         </div>
 
         {/* About Company */}
