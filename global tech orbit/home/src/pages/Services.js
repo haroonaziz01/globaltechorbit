@@ -8,6 +8,7 @@ import cyberImg from "../assets/C.jpeg";
 import dataImg from "../assets/7.jpeg";
 import projectImg from "../assets/P.jpeg"; 
 import consultingImg from "../assets/CCC.jpeg"; 
+import bgImg from "../assets/AI.jpeg";  // ✅ background image import
 
 export default function Services() {
   const services = [
@@ -24,7 +25,7 @@ export default function Services() {
   return (
     <div>
       {/* Services Section */}
-      <section style={sectionStyle}>
+      <section style={{ ...sectionStyle, backgroundImage: `url(${bgImg})` }}>
         <h1 style={titleStyle}>Our Services</h1>
         <div style={gridStyle}>
           {services.map((service, index) => (
@@ -50,7 +51,9 @@ export default function Services() {
 // Styles
 const sectionStyle = {
   padding: "40px",
-  background: "#f8f9fa",
+  backgroundSize: "cover",      // ✅ cover background
+  backgroundPosition: "center", // ✅ center align
+  backgroundRepeat: "no-repeat", // ✅ no repeat
 };
 
 const titleStyle = {
@@ -58,7 +61,8 @@ const titleStyle = {
   marginBottom: "30px",
   fontSize: "32px",
   fontWeight: "bold",
-  color: "#333",
+  color: "#fff", // ✅ white text (visible on bg)
+  textShadow: "1px 1px 4px rgba(0,0,0,0.6)", // ✅ better readability
 };
 
 const gridStyle = {
@@ -101,36 +105,4 @@ const headingStyle = {
 
 const descStyle = {
   fontSize: "14px",
-};
-
-// Project Section Styles
-const projectSectionStyle = {
-  padding: "60px 40px",
-  background: "#ffffff",
-};
-
-const projectTitleStyle = {
-  textAlign: "center",
-  marginBottom: "40px",
-  fontSize: "34px",
-  fontWeight: "bold",
-  color: "#222",
-};
-
-const projectBoxStyle = {
-  display: "flex",
-  flexWrap: "wrap",
-  gap: "30px",
-  alignItems: "center",
-  justifyContent: "center",
-};
-
-const projectImgStyle = {
-  width: "400px",
-  borderRadius: "12px",
-  boxShadow: "0 6px 12px rgba(0,0,0,0.3)",
-};
-
-const projectTextStyle = {
-  maxWidth: "600px",
 };

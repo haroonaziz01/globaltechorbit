@@ -1,10 +1,10 @@
 // src/pages/Home.js
 import React, { useState, useEffect } from "react";
 import img2 from "../assets/4.webp";
-import img4 from "../assets/6.jpeg";
+import img4 from "../assets/gto.png";
 import img5 from "../assets/5.jpeg";
 import img3 from "../assets/7.jpeg";
-import img1 from "../assets/5.jpeg";
+import img1 from "../assets/gto.png";
 
 export default function Home() {
   const backgrounds = [img1, img2, img3, img4, img5];

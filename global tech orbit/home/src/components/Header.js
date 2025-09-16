@@ -33,17 +33,17 @@ const links = [
 
 // 🎨 Styles
 const headerStyle = {
-  padding: "12px 25px",
-  background: "linear-gradient(90deg, #0f2027, #203a43, #2c5364)",
+  padding: "4px 12px", // ✅ half padding
+  background: "linear-gradient(90deg, #0a061cff, #295293ff, #0e1812ff)",
   color: "white",
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
-  boxShadow: "0 4px 8px rgba(0,0,0,0.3)",
+  boxShadow: "0 2px 4px rgba(0,0,0,0.25)", // ✅ lighter shadow
   position: "sticky",
   top: 0,
   zIndex: 1000,
-  flexWrap: "wrap", // ✅ Mobile support
+  flexWrap: "wrap",
 };
 
 const leftStyle = {
@@ -51,18 +51,18 @@ const leftStyle = {
   alignItems: "center",
 };
 
-// 📌 Responsive Logo Size
+// 📌 Super Slim Logo
 const getLogoStyle = () => {
-  if (window.innerWidth <= 480) return { height: "50px", marginRight: "10px" };
-  if (window.innerWidth <= 768) return { height: "60px", marginRight: "12px" };
-  return { height: "70px", marginRight: "15px" };
+  if (window.innerWidth <= 480) return { height: "22px", marginRight: "4px" };
+  if (window.innerWidth <= 768) return { height: "28px", marginRight: "6px" };
+  return { height: "32px", marginRight: "8px" }; // ✅ almost half of old size
 };
 
-// 📌 Responsive Title Size
+// 📌 Slim Title
 const getTitleStyle = () => {
-  let fontSize = "22px";
-  if (window.innerWidth <= 480) fontSize = "16px";
-  else if (window.innerWidth <= 768) fontSize = "18px";
+  let fontSize = "14px";
+  if (window.innerWidth <= 480) fontSize = "11px";
+  else if (window.innerWidth <= 768) fontSize = "12px";
 
   return {
     margin: 0,
@@ -70,27 +70,28 @@ const getTitleStyle = () => {
     fontFamily: "'Orbitron', sans-serif",
     textTransform: "uppercase",
     fontWeight: "bold",
-    background: "linear-gradient(90deg, #00f7ff, #00ff85)",
+    background: "linear-gradient(90deg, #00f7ff, #1498c5ff)",
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
-    letterSpacing: "1px",
+    letterSpacing: "0.5px",
   };
 };
 
 const navStyle = {
   display: "flex",
   alignItems: "center",
-  flexWrap: "wrap", // ✅ Mobile par line break
+  flexWrap: "wrap",
   justifyContent: "center",
 };
 
 const linkStyle = {
   color: "white",
   textDecoration: "none",
-  marginLeft: "12px",
+  marginLeft: "6px", // ✅ reduced spacing
   fontWeight: "500",
+  fontSize: "12px", // ✅ smaller text
   fontFamily: "'Poppins', sans-serif",
-  padding: "6px 8px",
-  borderRadius: "6px",
+  padding: "2px 4px", // ✅ very slim padding
+  borderRadius: "4px",
   transition: "all 0.3s ease",
 };

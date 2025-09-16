@@ -8,16 +8,39 @@ export default function Founder() {
         <h1 style={titleStyle}>Meet Our Founders</h1>
 
         <div style={containerStyle}>
-          {/* Founder 1 */}
+          {/* Founder */}
           <div style={founderBoxStyle}>
             <h2 style={nameStyle}>Khawaja Muhammad Haroon</h2>
             <h4 style={roleStyle}>Founder & CEO – Global Tech Orbit</h4>
             <p style={paraGradient}>
-              With an unwavering passion for technology and innovation, I
-              established <b>Global Tech Orbit</b> to deliver groundbreaking
-              IT solutions across the globe. From Artificial Intelligence to
-              Cybersecurity, our mission is to empower businesses with
-              transformative digital strategies that ensure long-term success.
+              I am <b>Khawaja Muhammad Haroon</b>, a passionate technologist and
+              visionary entrepreneur with a relentless drive to innovate and
+              create. My journey started with a strong curiosity about how
+              technology can transform lives, and today I lead <b>Global Tech
+              Orbit</b> with the mission of empowering organizations, students,
+              and industries worldwide.
+            </p>
+            <p style={paraStyle}>
+              With expertise in <b>Artificial Intelligence,  Cloud
+              Computing, Full-Stack Development, and Project Management</b>, I
+              believe in solving real-world problems by blending creativity with
+              technology. My focus is not just on building IT solutions but also
+              on creating sustainable growth and long-term impact for every
+              client and partner we work with.
+            </p>
+            <p style={paraStyle}>
+              Beyond technology, my leadership philosophy revolves around
+              <b> mentoring young talent, fostering innovation, and building a
+              culture of collaboration</b>. I strongly believe that the future
+              belongs to those who can combine technical excellence with
+              strategic vision — and at <b>Global Tech Orbit</b>, we are doing
+              exactly that.
+            </p>
+            <p style={paraStyle}>
+              Whether it’s developing cutting-edge AI solutions, managing
+              enterprise-level projects, or delivering end-to-end consulting, my
+              goal is to make <b>Global Tech Orbit</b> a symbol of trust,
+              innovation, and excellence across the globe.
             </p>
           </div>
         </div>
@@ -26,17 +49,27 @@ export default function Founder() {
         <div style={aboutBoxStyle}>
           <h2 style={aboutTitleStyle}>About Global Tech Orbit</h2>
           <p style={aboutTextStyle}>
-            At <b>Global Tech Orbit</b>, we are dedicated to bridging the gap
-            between businesses and technology. Our core belief is that
-            innovation should be accessible to everyone, enabling companies to
-            grow faster, operate smarter, and serve their customers better.
+            At <b>Global Tech Orbit</b>, we go beyond traditional IT services.
+            Along with cutting-edge solutions in <b>AI, Cloud, Cybersecurity, and Development</b>,
+            we also specialize in <b>Project Management</b> to help organizations plan, execute,
+            and deliver successful outcomes with precision and efficiency.
           </p>
           <p style={aboutTextStyle}>
-            Whether it's Artificial Intelligence, Full-Stack Development, or
-            advanced Cloud & Security solutions — our team thrives on turning
-            ideas into impactful realities. We are not just a service provider;
-            we are your trusted technology partner in the journey toward
-            success.
+            For students and learners, we provide <b>hands-on training, mentorship, and
+            real-world projects</b> so they can gain practical knowledge and skills that prepare
+            them for a competitive tech industry. Our mission is to not just serve businesses,
+            but also to empower the next generation of innovators.
+          </p>
+          <p style={aboutTextStyle}>
+            We also provide <b>Bulletin Project Services</b> tailored especially for
+            <b> PSUs (Public Sector Units)</b>, ensuring robust, secure, and scalable
+            solutions that meet the unique demands of the public sector.
+          </p>
+          <p style={aboutTextStyle}>
+            Whether you are a startup looking for complete digital solutions, an enterprise
+            aiming for <b>scalable IT infrastructure</b>, or a student eager to build your
+            future, <b>Global Tech Orbit</b> is your trusted partner. We combine
+            <b> innovation, strategy, and execution</b> to ensure long-term growth and success.
           </p>
         </div>
       </div>
@@ -104,6 +137,13 @@ const paraGradient = {
   WebkitBackgroundClip: "text",
   WebkitTextFillColor: "transparent",
   fontWeight: "500",
+};
+
+const paraStyle = {
+  fontSize: "16px",
+  lineHeight: "1.6",
+  color: "#eee",
+  marginBottom: "15px",
 };
 
 const aboutBoxStyle = {
